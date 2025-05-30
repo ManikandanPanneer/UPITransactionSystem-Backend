@@ -1,0 +1,15 @@
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\bin\Debug\net8.0\UPITransaction.Application.deps.json
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\bin\Debug\net8.0\UPITransaction.Application.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\bin\Debug\net8.0\UPITransaction.Application.pdb
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\bin\Debug\net8.0\UPITransaction.DataAccessLayer.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\bin\Debug\net8.0\UPITransaction.DataAccessLayer.pdb
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.csproj.AssemblyReference.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.AssemblyInfoInputs.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.AssemblyInfo.cs
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.csproj.CoreCompileInputs.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITrans.57812C4B.Up2Date
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\refint\UPITransaction.Application.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\UPITransaction.Application.pdb
+D:\Manikandan\Personal\UPI Project\UPITransaction.Application\obj\Debug\net8.0\ref\UPITransaction.Application.dll

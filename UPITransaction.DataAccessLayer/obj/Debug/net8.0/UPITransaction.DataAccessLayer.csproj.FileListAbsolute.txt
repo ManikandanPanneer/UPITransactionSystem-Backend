@@ -1,0 +1,14 @@
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\bin\Debug\net8.0\UPITransaction.DataAccessLayer.deps.json
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\bin\Debug\net8.0\UPITransaction.DataAccessLayer.runtimeconfig.json
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\bin\Debug\net8.0\UPITransaction.DataAccessLayer.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\bin\Debug\net8.0\UPITransaction.DataAccessLayer.pdb
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.csproj.AssemblyReference.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.AssemblyInfoInputs.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.AssemblyInfo.cs
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\refint\UPITransaction.DataAccessLayer.dll
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.pdb
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\UPITransaction.DataAccessLayer.genruntimeconfig.cache
+D:\Manikandan\Personal\UPI Project\UPITransaction.DataAccessLayer\obj\Debug\net8.0\ref\UPITransaction.DataAccessLayer.dll

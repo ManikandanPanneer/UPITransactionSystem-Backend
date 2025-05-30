@@ -1,0 +1,145 @@
+[
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UpiController",
+    "Method": "AddMoney",
+    "RelativePath": "api/upi/add-money/{phoneNumber}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "UPITransaction.Application.DTOs.AddMoneyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UpiController",
+    "Method": "GetBalance",
+    "RelativePath": "api/upi/balance/{phoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UpiController",
+    "Method": "Transfer",
+    "RelativePath": "api/upi/transfer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UPITransaction.Application.DTOs.TransferRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UpiController",
+    "Method": "UpdateUpiStatus",
+    "RelativePath": "api/upi/upi-status/{phoneNumber}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "enable",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UPITransaction.Application.DTOs.RegisterUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UserController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/users/{phoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UserController",
+    "Method": "ValidateReceiver",
+    "RelativePath": "api/users/validate-receiver",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "senderPhone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "receiverPhone",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UPITransaction.API.Controllers.UserController",
+    "Method": "ValidateUser",
+    "RelativePath": "api/users/validate/{phoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

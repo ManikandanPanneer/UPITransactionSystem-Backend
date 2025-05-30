@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PP7wlBl4bvvQCywBLWE7AMOFh6kMBtJeZNDsgaEGIN8=",
+  "Source": "UPITransaction.API",
+  "BasePath": "_content/UPITransaction.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

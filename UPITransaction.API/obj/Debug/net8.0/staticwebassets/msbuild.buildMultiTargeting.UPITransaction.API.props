@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UPITransaction.API.props" />
+</Project>

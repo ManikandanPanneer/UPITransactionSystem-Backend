@@ -49,27 +49,20 @@ namespace UPITransaction.Application.Services
         }
 
         // Validating sender and reciver
-        public async Task<BaseResponse<UserInfoResponse>> ValidateReceiverAsync(string senderPhone, string receiverPhone)
+        public async Task<BaseResponse<bool>> ValidateReceiverAsync(string senderPhone, string receiverPhone)
         {
             if (senderPhone == receiverPhone)
-                return BaseResponse<UserInfoResponse>.FailureResponse("Sender and receiver must be different.");
+                return BaseResponse<bool>.FailureResponse("Sender and receiver must be different.");
 
             var sender = await _userRepo.GetByPhoneNumberAsync(senderPhone);
             if (sender == null || !sender.IsUpiEnabled)
-                return BaseResponse<UserInfoResponse>.FailureResponse("Sender not valid or UPI not enabled.");
+                return BaseResponse<bool>.FailureResponse("Sender not valid or UPI not enabled.");
 
             var receiver = await _userRepo.GetByPhoneNumberAsync(receiverPhone);
             if (receiver == null || !receiver.IsUpiEnabled)
-                return BaseResponse<UserInfoResponse>.FailureResponse("Receiver not valid or UPI not enabled.");
+                return BaseResponse<bool>.FailureResponse("Receiver not valid or UPI not enabled.");        
 
-            var userinfo = new UserInfoResponse
-            {
-                PhoneNumber = sender.PhoneNumber,
-                Balance = sender.Balance,
-                IsUpiEnabled = sender.IsUpiEnabled
-            };
-
-            return BaseResponse<UserInfoResponse>.SuccessResponse("Receiver is valid.", userinfo);
+            return BaseResponse<bool>.SuccessResponse("Receiver is valid.", true);
         }
 
         //Checking valid user or not (Login)

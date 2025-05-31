@@ -1,10 +1,13 @@
-﻿namespace UPITransaction.Application.Interface
+﻿using UPITransaction.Application.Common;
+using UPITransaction.Application.DTOs;
+
+namespace UPITransaction.Application.Interface
 {
     public interface IUpiService
     {
-        Task<string> UpdateUpiStatusAsync(string phoneNumber, bool enable);
-        Task<decimal?> GetBalanceAsync(string phoneNumber);
-        Task<bool> AddMoneyAsync(string phoneNumber, decimal amount);
-        Task<string> TransferAsync(string senderPhone, string receiverPhone, decimal amount);
+        Task<BaseResponse<bool>> UpdateUpiStatusAsync(string phoneNumber, bool enable);
+        Task<BaseResponse<decimal>> GetBalanceAsync(string phoneNumber);
+        Task<BaseResponse<decimal>> AddMoneyAsync(string phoneNumber, decimal amount);
+        Task<BaseResponse<bool>> TransferAsync(string senderPhone, string receiverPhone, decimal amount);
     }
 }

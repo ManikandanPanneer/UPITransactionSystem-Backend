@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UPITransaction.Application.Common;
 using UPITransaction.Application.DTOs;
 using UPITransaction.Application.Interface;
 
@@ -20,41 +19,37 @@ namespace UPITransaction.API.Controllers
         [HttpPatch("upi-status/{phoneNumber}")]
         public async Task<IActionResult> UpdateUpiStatus(string phoneNumber, [FromBody] bool enable)
         {
-            var result = await _upiService.UpdateUpiStatusAsync(phoneNumber, enable);
+            var response = await _upiService.UpdateUpiStatusAsync(phoneNumber, enable);
 
-            return result.Contains("enabled") || result.Contains("disabled")
-                ? Ok(BaseResponse<string>.SuccessResponse(result, phoneNumber))
-                : NotFound(BaseResponse<string>.FailureResponse(result));
+            return response.Success ? Ok(response) : NotFound(response);
         }
+
 
         // Get current balance
         [HttpGet("balance/{phoneNumber}")]
         public async Task<IActionResult> GetBalance(string phoneNumber)
         {
-            var balance = await _upiService.GetBalanceAsync(phoneNumber);
-            return balance.HasValue
-                ? Ok(BaseResponse<decimal>.SuccessResponse("Balance fetched", balance.Value))
-                : NotFound(BaseResponse<decimal>.FailureResponse("User not found."));
+            var response = await _upiService.GetBalanceAsync(phoneNumber);
+
+            return response.Success ? Ok(response) : NotFound(response);
         }
 
-        // Add money 
+        // Add money
         [HttpPut("add-money/{phoneNumber}")]
         public async Task<IActionResult> AddMoney(string phoneNumber, [FromBody] AddMoneyRequest request)
         {
-            var result = await _upiService.AddMoneyAsync(phoneNumber, request.Amount);
-            return result
-                ? Ok(BaseResponse<string>.SuccessResponse("Money added", phoneNumber))
-                : BadRequest(BaseResponse<string>.FailureResponse("Invalid user or amount."));
+            var response = await _upiService.AddMoneyAsync(phoneNumber, request.Amount);
+
+            return response.Success ? Ok(response) : NotFound(response);
         }
 
         // Transfer money 
         [HttpPost("transfer")]
         public async Task<IActionResult> Transfer([FromBody] TransferRequest request)
         {
-            var message = await _upiService.TransferAsync(request.SenderPhoneNumber, request.ReceiverPhoneNumber, request.Amount);
-            return message == "Transfer successful."
-                ? Ok(BaseResponse<string>.SuccessResponse(message, request.Amount.ToString()))
-                : BadRequest(BaseResponse<string>.FailureResponse(message));
+            var response = await _upiService.TransferAsync(request.SenderPhoneNumber, request.ReceiverPhoneNumber, request.Amount);
+
+            return response.Success ? Ok(response) : NotFound(response);
         }
     }
 }

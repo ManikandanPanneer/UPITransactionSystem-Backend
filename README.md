@@ -1,7 +1,10 @@
 
 # 💸 UPI Transaction System – Backend (.NET Core)
 
-A lightweight and modular UPI backend system built using ASP.NET Core 8 Web API and Entity Framework Core, following Clean Architecture principles.
+## Explaination
+- 🔗 [Explaination 1](https://www.loom.com/share/9b05c1161aaa40008ae250cc1c007139?sid=e9a382d0-953e-4be8-818b-23abdbec4ec6)
+
+- 🔗 [Explaination 2](https://www.loom.com/share/f9dbac04bad3403e84e869746fecfe1e?sid=09049cfa-931b-4125-95d5-49d2f7fe298b)
 
 ---
 
